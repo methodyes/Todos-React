@@ -37,6 +37,15 @@ import React, { Component } from 'react'
         onChange={this.clickToChange}
         />
         <button onClick={this.clickToAdd}>Add Task</button>
+        <div>
+            <ul>
+                {this.state.list.map((input)=>{
+                    return (
+                        <li>{input}</li>
+                    )
+                })}
+            </ul>
+        </div>
       </div>
     )
   }
