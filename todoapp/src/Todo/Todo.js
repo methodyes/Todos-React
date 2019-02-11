@@ -22,7 +22,9 @@ import React, { Component } from 'react'
      clickToAdd(elem){
     var elem = this.state.inputData
     this.state.list.push(elem)
-
+    this.setState({
+        list : this.state.list,
+    })
      }
   render() {
     return (
