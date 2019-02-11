@@ -42,7 +42,7 @@ import React, { Component } from 'react'
   render() {
     return (
       <div>
-          <h1>{this.state.title}</h1>
+          <h1 style={{color:'red'}}>{this.state.title}</h1>
         <input
         onKeyDown={this.enterTo}
         type="text"
@@ -51,7 +51,7 @@ import React, { Component } from 'react'
         onChange={this.clickToChange}
         />
         <button onClick={this.clickToAdd}>Add Task</button>
-        <div>
+        <div style={{color:"dark blue"}}>
             <ul>
                 {this.state.list.map((input)=>{
                     return (
