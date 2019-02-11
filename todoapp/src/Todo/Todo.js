@@ -11,13 +11,16 @@ import React, { Component } from 'react'
           
        }
        this.clickToChange=this.clickToChange.bind(this)
+       this.clickToAdd=this.clickToAdd.bind(this)
      }
      clickToChange(type){
      this.setState({
         inputData : type.target.value
      })
      }
-     
+     clickToAdd(){
+         
+     }
   render() {
     return (
       <div>
@@ -28,7 +31,7 @@ import React, { Component } from 'react'
         value={this.state.inputData}
         onChange={this.clickToChange}
         />
-        <button>Add Task</button>
+        <button onClick={this.clickToAdd}>Add Task</button>
       </div>
     )
   }
