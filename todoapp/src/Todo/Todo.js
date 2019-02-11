@@ -24,6 +24,7 @@ import React, { Component } from 'react'
     this.state.list.push(elem)
     this.setState({
         list : this.state.list,
+        inputData : "",
     })
      }
   render() {
