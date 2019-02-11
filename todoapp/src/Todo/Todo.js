@@ -10,6 +10,10 @@ import React, { Component } from 'react'
 
           
        }
+       this.clickToChange=this.clickToChange.bind(this)
+     }
+     clickToChange(){
+         
      }
      
   render() {
@@ -20,6 +24,7 @@ import React, { Component } from 'react'
         type="text"
         placeholder="Type your task here!!!"
         value={this.state.inputData}
+        onChange={this.clickToChange}
         />
         <button>Add Task</button>
       </div>
