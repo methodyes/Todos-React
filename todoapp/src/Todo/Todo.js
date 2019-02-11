@@ -5,6 +5,7 @@ import React, { Component } from 'react'
        super(props)
      
        this.state = {
+           title : "My todo app"
           
        }
      }
@@ -12,7 +13,9 @@ import React, { Component } from 'react'
   render() {
     return (
       <div>
-        
+          <h1>{this.state.title}</h1>
+        <input/>
+        <button>Add Task</button>
       </div>
     )
   }
