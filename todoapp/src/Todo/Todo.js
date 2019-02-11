@@ -14,7 +14,9 @@ import React, { Component } from 'react'
     return (
       <div>
           <h1>{this.state.title}</h1>
-        <input/>
+        <input
+        type="text"
+        placeholder="Type your task here!!!"/>
         <button>Add Task</button>
       </div>
     )
