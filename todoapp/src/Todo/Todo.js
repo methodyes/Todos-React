@@ -12,8 +12,10 @@ import React, { Component } from 'react'
        }
        this.clickToChange=this.clickToChange.bind(this)
      }
-     clickToChange(){
-         
+     clickToChange(type){
+     this.setState({
+        inputData : type.target.value
+     })
      }
      
   render() {
