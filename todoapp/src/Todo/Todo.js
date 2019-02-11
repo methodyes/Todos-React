@@ -7,6 +7,7 @@ import React, { Component } from 'react'
        this.state = {
            title : "My todo app",
            inputData : "",
+           list : [],
 
           
        }
@@ -18,8 +19,10 @@ import React, { Component } from 'react'
         inputData : type.target.value
      })
      }
-     clickToAdd(){
-         
+     clickToAdd(elem){
+    var elem = this.state.inputData
+    this.state.list.push(elem)
+
      }
   render() {
     return (
