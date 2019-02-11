@@ -5,7 +5,9 @@ import React, { Component } from 'react'
        super(props)
      
        this.state = {
-           title : "My todo app"
+           title : "My todo app",
+           inputData : "",
+
           
        }
      }
@@ -16,7 +18,9 @@ import React, { Component } from 'react'
           <h1>{this.state.title}</h1>
         <input
         type="text"
-        placeholder="Type your task here!!!"/>
+        placeholder="Type your task here!!!"
+        value={this.state.inputData}
+        />
         <button>Add Task</button>
       </div>
     )
