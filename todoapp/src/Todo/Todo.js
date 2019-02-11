@@ -21,7 +21,11 @@ import React, { Component } from 'react'
      })
      }
      clickToAdd(elem){
+        
     var elem = this.state.inputData
+    if(elem===""){
+        return
+    }
     this.state.list.push(elem)
     this.setState({
         list : this.state.list,
