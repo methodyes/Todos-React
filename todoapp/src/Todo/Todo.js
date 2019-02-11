@@ -13,6 +13,7 @@ import React, { Component } from 'react'
        }
        this.clickToChange=this.clickToChange.bind(this)
        this.clickToAdd=this.clickToAdd.bind(this)
+       this.enterTo=this.enterTo.bind(this)
      }
      clickToChange(type){
      this.setState({
@@ -27,11 +28,19 @@ import React, { Component } from 'react'
         inputData : "",
     })
      }
+     enterTo(e){
+         if(e.which===13){
+             return (
+             this.clickToAdd(this.state.inputData)
+             )
+         }
+     }
   render() {
     return (
       <div>
           <h1>{this.state.title}</h1>
         <input
+        onKeyDown={this.enterTo}
         type="text"
         placeholder="Type your task here!!!"
         value={this.state.inputData}
