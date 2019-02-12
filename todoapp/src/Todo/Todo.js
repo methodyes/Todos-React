@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Todosub from './Todosub'
 
  class Todo extends Component {
      constructor(props) {
@@ -55,7 +56,8 @@ import React, { Component } from 'react'
             <ul>
                 {this.state.list.map((input)=>{
                     return (
-                        <li>{input}</li>
+                        // <li>{input}</li>
+                        <li><Todosub input={input}/></li>
                     )
                 })}
             </ul>
