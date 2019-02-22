@@ -57,7 +57,7 @@ import Todosub from './Todosub'
                 {this.state.list.map((input)=>{
                     return (
                         // <li>{input}</li>
-                        <li key="2"><Todosub input={input}/></li>
+                        <li key="1"><Todosub input={input}/></li>
                     )
                 })}
             </ul>
