@@ -42,6 +42,9 @@ import Todosub from './Todosub'
              )
          }
      }
+     componentDidMount(){
+       console.log(this.inputref)
+     }
   render() {
     return (
       <div>
