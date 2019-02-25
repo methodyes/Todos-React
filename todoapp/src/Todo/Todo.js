@@ -43,6 +43,7 @@ import Todosub from './Todosub'
          }
      }
      componentDidMount(){
+       this.inputref.current.focus()
        console.log(this.inputref)
      }
   render() {
