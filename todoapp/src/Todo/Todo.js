@@ -47,7 +47,7 @@ import Todosub from './Todosub'
         <input
         onKeyDown={this.enterTo}
         type="text"
-        placeholder="Type your task here!!!"
+        // placeholder="Type your task here!!!"
         value={this.state.inputData}
         onChange={this.clickToChange}
         />
