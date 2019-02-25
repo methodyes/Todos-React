@@ -12,6 +12,8 @@ import Todosub from './Todosub'
 
           
        }
+       this.inputref=React.createRef()
+
        this.clickToChange=this.clickToChange.bind(this)
        this.clickToAdd=this.clickToAdd.bind(this)
        this.enterTo=this.enterTo.bind(this)
